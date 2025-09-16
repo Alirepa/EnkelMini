@@ -17,8 +17,27 @@ class Program
 
         Console.WriteLine("Ange andra talet:");
         double num2 = Convert.ToDouble(Console.ReadLine());
+
+        switch (choice) {
+            case 1:
+                Addition(num1, num2);
+                break;
+            case 2:
+                Subtraction(num1, num2);
+                break;
+            case 3:
+                Multiplication(num1, num2);
+                break;
+            case 4:
+                Division(num1, num2);
+                break;
+            default:
+                Console.WriteLine("Ogiltigt val");
+                break;
+        }
     }
-    
+
+
 
     static void Addition(double num1, double num2)
     {
